@@ -15,8 +15,8 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/item_movie"
         android:descendantFocusability="blocksDescendants"
-        android:focusable="true"
-        android:focusableInTouchMode="true"/>
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
 
 
 

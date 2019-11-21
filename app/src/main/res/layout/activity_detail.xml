@@ -20,8 +20,15 @@
             android:text="HarryHarryH arry tPottetPotPottetPottette rerPotter"
             android:textColor="@color/black"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="30sp"
             android:textStyle="bold"/>
+
+        <fragment
+            android:layout_marginTop="20dp"
+            android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+            android:id="@+id/youtubePlayerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
         <LinearLayout
                 android:layout_marginTop="20dp"

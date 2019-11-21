@@ -13,6 +13,7 @@ public class Movie implements Parcelable {
     private String shortdesc;
     private String sinopsis;
     private String poster;
+    private String trailer;
 
     public Movie() {
 
@@ -27,7 +28,13 @@ public class Movie implements Parcelable {
         this.judul = judul;
     }
 
+    public String getTrailer() {
+        return trailer;
+    }
 
+    public void setTrailer(String trailer) {
+        this.trailer = trailer;
+    }
 
     public String getDurasi() {
         return durasi;
@@ -103,6 +110,7 @@ public class Movie implements Parcelable {
         shortdesc = in.readString();
         sinopsis = in.readString();
         poster = in.readString();
+        trailer = in.readString();
     }
 
     @Override
@@ -116,6 +124,7 @@ public class Movie implements Parcelable {
         dest.writeString(shortdesc);
         dest.writeString(sinopsis);
         dest.writeString(poster);
+        dest.writeString(trailer);
     }
 
     @Override

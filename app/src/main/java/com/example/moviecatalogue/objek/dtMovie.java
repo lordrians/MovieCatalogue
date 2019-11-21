@@ -537,6 +537,19 @@ public class dtMovie {
             "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,666,1000_AL_.jpg"
     };
 
+    private static String[] trailer = {
+            "NmzuHjWmXOc",
+            "sY1S34973zA",
+            "9O1Iy9od7-A",
+            "EXeTwQWrcwY",
+            "_13J_9B5jEk",
+            "gG22XNhtnoY",
+            "r5X-hFf6Bwo",
+            "s7EdQ4FqbhY",
+            "UHctLmLIrpQ",
+            "qtRKdVHc-cE"
+    };
+
     public static ArrayList<Movie> getData(){
         ArrayList<Movie> list = new ArrayList<>();
         for (int i = 0; i < judul.length; i++){
@@ -550,6 +563,7 @@ public class dtMovie {
             movie.setShortdesc(shortdesc[i]);
             movie.setSinopsis(sinopsis[i]);
             movie.setPoster(poster[i]);
+            movie.setTrailer(trailer[i]);
             list.add(movie);
         }
         return list;
